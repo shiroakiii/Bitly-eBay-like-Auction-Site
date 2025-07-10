@@ -11,7 +11,7 @@ This project is an e-commerce auction web application built with **Django**, des
   Users can create auction listings with title, description, starting bid, optional image URL, and category.
 
 - **View Listings**  
-  Homepage shows all active listings with details: title, price, image, and description.
+  Homepage shows all listings with details: title, price, image, and description.
 
 - **Listing Detail Page**  
   - Bid on items (with validation)
@@ -24,7 +24,7 @@ This project is an e-commerce auction web application built with **Django**, des
   Logged-in users can view and manage their personal watchlist.
 
 - **Categories**  
-  Browse auctions by category. Only active listings are shown.
+  Browse auctions by category. 
 
 - **Django Admin**  
   Admins can manage users, listings, bids, and comments.
