@@ -1,0 +1,31 @@
+{% extends "auctions/layout.html" %}
+
+{% block body %}
+    {% if user.is_authenticated %}
+        <p class="greeting">{{ user.username }}'s watchlist</p>
+    {% endif %}
+
+    <div class="d-flex justify-content-center">
+        <div class="container mt-4" style="max-width: 1140px;">
+            <div class="row justify-content-start">
+                {% for listing in watchlist %}
+                    <div class="col-12 col-sm-6 col-md-4 mb-4">
+                        <a href="{% url 'listing' listing.id %}" class="text-decoration-none text-dark">
+                            <div class="card custom-card h-100">
+                                <img src="{{ listing.image_url }}" class="card-img-top custom-img" alt="{{ listing.title }}">
+                                <div class="card-body">
+                                    <h5 class="card-title font-weight-bold">{{ listing.title }}</h5>
+                                    <p class="card-text">{{ listing.description|truncatechars:100 }}</p>
+                                    <p class="card-text font-weight-bold">Current Price: ${{ listing.current_price }}</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                {% empty %}
+                    <p>No listings available.</p>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

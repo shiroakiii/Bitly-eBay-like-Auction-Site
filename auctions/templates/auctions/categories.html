@@ -1,0 +1,60 @@
+{% extends "auctions/layout.html" %}
+{% load static %}
+
+{% block body %}
+
+<h2 class="greeting">Browse by Category</h2>
+
+<div class="category-grid">
+    <div class="category-box">
+        <a href="{% url 'browse' %}?category=Electronics">
+        <img src="{% static 'auctions/1.png' %}" class="img-cat" alt="Books">
+        <h4>Electronics</h4>
+        </a>
+    </div>
+    <div class="category-box">
+        <a href="{% url 'browse' %}?category=Gaming">
+        <img src="{% static 'auctions/2.png' %}" class="img-cat" alt="Fashion">
+        <h4>Gaming</h4>
+        </a>
+    </div>
+    <div class="category-box">
+        <a href="{% url 'browse' %}?category=Fashion">
+        <img src="{% static 'auctions/3.png' %}" class="img-cat" alt="Fashion">
+        <h4>Fashion</h4>
+        </a>
+    </div>
+    <div class="category-box">
+        <a href="{% url 'browse' %}?category=Art and Collectibles">
+        <img src="{% static 'auctions/4.png' %}" class="img-cat" alt="Fashion">
+        <h4>Art and Collectibles</h4>
+        </a>
+    </div>
+    <div class="category-box">
+        <a href="{% url 'browse' %}?category=Books and Media">
+        <img src="{% static 'auctions/5.png' %}" class="img-cat" alt="Fashion">
+        <h4>Books and media</h4>
+        </a>
+    </div>
+    <div class="category-box">
+        <a href="{% url 'browse' %}?category=Vehicle and Parts">
+        <img src="{% static 'auctions/6.png' %}" class="img-cat" alt="Fashion">
+        <h4>Vehicle and Parts</h4>
+        </a>
+    </div>
+    <div class="category-box">
+        <a href="{% url 'browse' %}?category=Home and Living">
+        <img src="{% static 'auctions/7.png' %}" class="img-cat" alt="Fashion">
+        <h4>Home and Living</h4>
+        </a>
+    </div>
+    <div class="category-box">
+        <a href="{% url 'browse' %}?category=Business and Industrial">
+        <img src="{% static 'auctions/8.png' %}" class="img-cat" alt="Fashion">
+        <h4>Business and Industrial</h4>
+        </a>
+    </div>
+
+</div>
+
+{% endblock %}

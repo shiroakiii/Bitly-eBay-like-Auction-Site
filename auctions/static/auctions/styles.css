@@ -1,0 +1,493 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FFFFFA !important;
+}
+
+:root {
+    --main-color: #FF312E;
+    --red-tone: #FF7370;
+    --light-red: #FF9B99;
+    --black: #000103;
+    --gray: #333138;
+    --light-gray: #515052;
+    --bg-color: #FFFFFA;
+    --light-main-color: rgba(255, 54, 51, 0.8);
+    --card-background: rgba(255, 255, 255, 0.5);
+}
+
+#logo {
+    height: 70px;
+    width: auto;
+}
+
+#brand { 
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    margin-left: 10px;
+    transform: translateY(10px);
+}
+
+.logo {
+    display:flex;
+    align-items: center;
+    margin-left: 150px;
+}
+
+header.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    background-color: #FFFFFA; 
+    font-family: 'Roboto', sans-serif;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-right: 100px;
+}
+
+.nav-link {
+    font-size: 20px;
+    color: #000;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+hr {
+    margin-top: 0px;
+}
+
+.body {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;    
+}
+
+.left-side {
+    margin-left: 170px;
+}
+
+.right-side {
+    margin-right: 100px;
+}
+
+#slogan, #span-bid{
+    font-size: 64px;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    width: 479px;
+}
+
+#span-bid {
+    color: var(--main-color);
+}
+
+#short-desc{
+    font-size: 20px;
+    font-weight: lighter;
+    font-family: 'Poppins', sans-serif;
+    width: 470px;
+    line-height: 45px;
+}
+
+#bid {
+    height: 594px;
+    width: 704px;
+}
+
+.buttons {
+    height: 60px;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    gap: 20px;
+}
+
+.btn-1 {
+    width: 247px;
+    background-color: var(--light-red);
+    border-radius: 15px;
+    border: none;
+}
+
+.btn-2 {
+    width: 187px;
+    background-color: var(--main-color);
+    border-radius: 15px;
+    font-size: 20px;
+    border: none;
+    color: white;
+}
+
+/** Login.html **/
+.login-form, .register-form, .create-form {
+    height: 500px;
+    width: 550px;
+    box-sizing: border-box;
+    position: absolute;    
+    background: var(--card-background);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    left: 470px;
+    top: 150px;
+}
+
+.name-form {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 60px;
+    color: #000000;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.labels {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.form-control {
+    box-sizing: border-box;
+    width: 370px;
+    height: 50px;
+    background: #FFFFFF;
+    border: 0.5px solid #000000;
+    border-radius: 15px;
+}
+
+.form, .form1, .form2 {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.login-btn, .create-btn{
+    background: var(--light-main-color);
+    border-radius: 15px;
+    width: 370px;
+    height: 50px;
+    color: white;
+}
+
+.prompt {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.prompt1 {
+    text-decoration: none;
+    color: #FF9B99;
+}
+
+.register-form {
+    height: 700px;
+}
+
+.form1 {
+    gap: 10px;
+}
+
+.alert {
+    margin-bottom: 0.5rem;     
+    font-size: 0.9rem;         
+    line-height: 1.2;
+}
+
+.close {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;    
+}
+
+/** BROWSE STYLES **/
+.greeting {
+    margin-left: 170px;
+    font-size: 26px;
+    font-family: 'Roboto';
+}
+
+.custom-card {
+    box-sizing: border-box;
+    width: 100%;
+    height: 420px;
+    background: var(--card-background);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+    margin-left: 30px;
+}
+
+.custom-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.custom-title {
+    color: #FF3633;
+}
+
+.custom-card:hover {
+    transform: scale(1.02);
+}
+
+/** CREATE LISTING **/
+.create-form {
+    height: 800px;
+    width: 750px;
+    left: 400px;
+}
+
+.form-control1 {
+    padding-left: 15px !important; 
+    caret-color: auto;
+    box-sizing: border-box;
+    width: 660px;
+    height: 50px;
+    background: #FFFFFF;
+    border: 0.5px solid #000000;
+    border-radius: 5px;
+}
+
+.form-group1 {
+    margin-left: 46px;
+}
+
+.create-btn {
+    width: 660px;
+    margin-left: 8px;
+    margin-top: 15px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+
+/* LISTING STYLES */
+.product-container {
+    box-sizing: border-box;
+    position: relative;
+    width: 1213px;
+    height: 425px;
+    margin-left: 175px;
+    margin-top: 40px;
+    background: var(--card-background);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    display: flex;
+    gap: 40px; 
+    padding: 30px;
+    font-family: 'Roboto';
+}
+
+.product-title {
+    margin-top: 10px;
+    font-weight: 500;
+    font-size: 40px;
+}
+
+.product-image {
+    height: 355px;
+    width: 570px;
+}
+
+.post-details {
+    font-weight: lighter;
+    font-size: 16px;
+    opacity: 60%;
+}
+
+.category {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.description {
+    font-size: 20px;
+    width: 560px;
+    height: 59px;   
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.current-price {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.num-bids {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    opacity: 60%;
+}
+
+.form-control3 {
+    box-sizing: border-box;
+    width: 520px;
+    height: 50px;
+    background: #FFFFFF;
+    border: 0.3px solid #000000;
+    border-radius: 10px;
+    padding: 15px;
+    font-size: 20px;
+}
+
+.form-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.wishlist {
+    width: 270px;
+    height: 50px;
+    background: var(--light-red);
+    border-radius: 15px;
+    font-size: 20px;
+    padding-top: 10px;
+    transform: translateY(-30px);
+}
+
+.place-bid {
+    width: 239px;
+    height: 50px;
+    background: var(--light-main-color);
+    border-radius: 15px;
+    font-size: 20px;
+    color: white;
+    transform: translateX(280px) translateY(20px);
+}
+
+.close-listing {
+    width: 239px;
+    height: 50px;
+    border-radius: 15px;
+    font-size: 20px;
+}
+
+.comment-section {
+    box-sizing: border-box;
+    position: relative;
+    width: 1213px;
+    height: 425px;
+    margin: 30px 0px 50px 175px;
+    background: var(--card-background);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 40px 40px 40px 50px;
+    font-family: 'Roboto';
+}
+
+#comment-title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.form-control4 {
+    box-sizing: border-box;
+    width: 915px;
+    height: 50px;
+    background: #FFFFFF;
+    border: 0.5px solid #000000;
+    border-radius: 10px;
+    padding-left: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.submit-comment {
+    width: 184px;
+    height: 50px;
+    background: var(--light-main-color);
+    border-radius: 10px;
+    color: white;
+    margin-left: 15px;
+}
+
+.comment-display-container {
+    max-height: 250px;
+    overflow-y: auto;
+    margin-right: 20px;
+}
+
+.comment-display-container::-webkit-scrollbar {
+    width: 6px;
+}
+
+.comment {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.avatar img {
+    width: 51px;
+    height: auto;
+}
+
+.comment-content .username {
+    font-size: 16px;
+    font-weight: 600;
+    transform: translateY(15px);
+}
+
+#no-comment {
+    font-size: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+/*CATEGORY STYLES */
+.category-box {
+    width: 290px;
+    height: 332px;
+    box-sizing: border-box;
+    background: var(--card-background);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.category-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: 20px 0 50px 155px;
+}
+
+.img-cat {
+    width: 230px;
+    height: 230px;
+}
+
+.category-box a {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    font-family: 'Roboto';
+    font-weight: 600;
+}   
+
+.category-box h4 {
+    margin-top: 20px;
+    font-size: 18px;
+}
