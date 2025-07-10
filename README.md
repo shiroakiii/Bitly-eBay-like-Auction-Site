@@ -30,21 +30,23 @@ This project is an e-commerce auction web application built with **Django**, des
   Admins can manage users, listings, bids, and comments.
 
 ## 🧠 Project Structure
+```
 commerce/
 ├── auctions/
-│   ├── admin.py
-│   ├── apps.py
-│   ├── models.py
-│   ├── templates/
-│   ├── tests.py
-│   ├── urls.py
-│   └── views.py
+│ ├── admin.py
+│ ├── apps.py
+│ ├── models.py
+│ ├── templates/
+│ ├── tests.py
+│ ├── urls.py
+│ └── views.py
 ├── commerce/
-│   ├── settings.py
-│   ├── urls.py
-│   └── wsgi.py
+│ ├── settings.py
+│ ├── urls.py
+│ └── wsgi.py
 ├── db.sqlite3
 └── manage.py
+```
 
 ## 🛠️ Technologies Used
 
