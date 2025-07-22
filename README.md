@@ -1,4 +1,4 @@
-# Bitly: eBay-like Auction Site
+# Bidly: eBay-like Auction Site
 
 This project is an e-commerce auction web application built with **Django**, designed to replicate key features of platforms like **eBay**. Users can register, create listings, place bids, comment, manage a watchlist, and explore auctions by categories.
 
